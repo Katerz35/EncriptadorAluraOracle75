@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo {
+    border-radius: 25%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif; /* Cambié la fuente a 'Poppins' */
+    background: url(./img/chile.jpg);
+    background-color: #51ad51; /* Cambié el color de fondo */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    max-width: 150px;
+    height: auto;
+    border-radius: 15%;
+}
+
+.titulo {
+    color: #000000; /* Cambié el color a blanco */
+    margin-top: 10px;
+}
+
+.banner {
+    background-color: rgba(3, 48, 3, 0.7); /* Cambié el color del fondo del banner */
+    color: #c0e41f; /* Cambié el color del texto del banner */
+    padding: 10px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+}
+
+/* Sección de inputs/outputs y botones*/
+
+.cuerpo__encriptador {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.encriptador__input, .encriptador__output {
+    flex: 1 1 400px;
+    max-width: 600px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+}
+
+.text-area, .mensaje {
+    width: 100%;
+    height: calc(100% - 80px);
+    resize: none;
+    padding: 10px;
+    border: 3px solid #143f00; /* Cambié el color del borde */
+    border-radius: 5px;
+    background-color: rgba(255, 252, 90, 0.9);
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.botones {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.btn-encriptar, .btn-desencriptar, .btn-copiar {
+    padding: 10px;
+    width: 48%;
+    background-color: #8bf008; /* Cambié el color del botón */
+    color: #010d1a; /* Cambié el color del texto del botón */
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.encriptador__output {
+    position: relative;
+}
+
+.btn-copiar {
+    position: absolute;
+    bottom: 90px;
+    left: 9.5%;
+    width: 80%;
+}
+
+footer {
+    padding: 10px;
+    background-color: #2a700a; /* Cambié el color del fondo */
+    color: #e0f2fe; /* Cambié el color del texto */
+    width: 100%;
+    text-align: center;
+}
+
+/* Media Queries para responsividad */
+@media (max-width: 768px) {
+
+    .logo {
+        max-width: 120px;
+    }
+
+    .botones {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btn-encriptar, .btn-desencriptar {
+        width: 100%;
+    }
+
+    .encriptador__input {
+        padding: 0 10px;    /* Ajuste para mayor espacio lateral en móviles */
+    }
+}
+

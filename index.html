@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador - Alura</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="icon" href="./img/ico.ico" type="image/png">
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="./img/logoA.jpg" alt="Logo de Alura">
+        <h1 class="titulo">Encriptador de textos</h1>
+        
+    </header>
+
+    <div class="banner"><b>NO USE NI MAYUSCULAS NI CARACTERES ESPECILES</b></div>
+
+    <main class="cuerpo__encriptador">
+        <div class="encriptador__input">
+            <textarea class="text-area" placeholder="NO USE NI MAYUSCULAS NI CARACTERES ESPECILES"></textarea>
+            <p class="banner"><b>Solo letras minúsculas, sin caracteres especiales ni números.</b></p>
+            
+            <div class="botones">
+                <button class="btn-encriptar" onclick="btnEncriptar()"><B>Encriptar</B></button>
+                <button class="btn-desencriptar" onclick="btnDesencriptar()"><B>Desencriptar</B></button>
+            </div>
+        </div>
+
+        <div class="encriptador__output">
+            <textarea class="mensaje" placeholder="Texto transcrito a encriptado" readonly></textarea>
+            <button class="btn-copiar"><B><I>Copiar</I></B></button>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>HECHO POR GUSTAVO SOTO RAMIREZ Oracle One G7 2024. &copy;</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
